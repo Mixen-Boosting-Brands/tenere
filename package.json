@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mixen-Boosting-Brands/tenere"
+    "url": "git+https://github.com/Mixen-Boosting-Brands/tenere.git"
   },
   "author": "Luis Carlos Pando <hey@luiscarlospando.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mixen-Boosting-Brands/tenereissues"
+    "url": "https://github.com/Mixen-Boosting-Brands/tenere/issues"
   },
   "homepage": "https://github.com/Mixen-Boosting-Brands/tenere#readme",
   "devDependencies": {
