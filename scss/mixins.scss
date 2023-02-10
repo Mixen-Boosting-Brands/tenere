@@ -32,9 +32,10 @@
 
 // Absolute centering X
 @mixin absolute-center-x {
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 // Absolute centering Y
