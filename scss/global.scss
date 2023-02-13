@@ -26,6 +26,10 @@ a {
     @include transition(ease, 0.3s);
 }
 
+figure {
+    margin-bottom: 0;
+}
+
 h1,
 h2,
 h3,
@@ -189,10 +193,18 @@ header#navbar {
         }
     }
 
-    .foto-2,
-    .foto-3 {
+    .foto-1,
+    .foto-2 {
         min-height: 100vh;
         padding: 30px;
+    }
+
+    .foto-1 {
+        background-position: left top;
+
+        & > div {
+            min-height: 100vh;
+        }
     }
 
     .foto-2 {
@@ -208,14 +220,6 @@ header#navbar {
 
         .overlay {
             background-color: rgba(21, 28, 98, 0.5);
-        }
-    }
-
-    .foto-3 {
-        background-position: left top;
-
-        & > div {
-            min-height: 100vh;
         }
     }
 
@@ -245,5 +249,21 @@ header#navbar {
                 z-index: 1;
             }
         }
+    }
+}
+
+#nosotros {
+    background-color: #C1B291;
+    color: $text-blue;
+    padding: 60px 0;
+    position: relative;
+
+    h6 {
+        font-family: 'circular_stdbook', sans-serif;
+    }
+
+    figure {
+        position: relative;
+        z-index: 2;
     }
 }
