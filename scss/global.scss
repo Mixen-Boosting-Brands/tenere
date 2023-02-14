@@ -398,6 +398,8 @@ header#navbar {
 }
 
 #descanso {
+    @include background('../images/bg-descanso.png', center, cover);
+    background-attachment: fixed;
     color: $text-gold;
     padding: 100px 0;
     
@@ -423,5 +425,169 @@ header#navbar {
         box-shadow: 0px 0px 14px 0px #ccc;
         font-family: 'circular_stdblack', sans-serif;
         @include font-size(3rem);
+    }
+}
+
+.blog {
+    background-color: $primary;
+    color: $text-white;
+    padding: 100px 0;
+    position: relative;
+
+    a {
+        color: $text-white;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+    }
+
+    h6 {
+        font-family: 'circular_stdbook', sans-serif;
+        letter-spacing: 0.3rem;
+    }
+
+    .post {
+        h1 {
+            @include font-size(1rem);
+        }
+
+        ul {
+            margin-bottom: 0;
+        }
+
+        .icon {
+            background-color: $secondary;
+            border-radius: 50px;
+            color: $text-blue;
+            width: 34px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-secondary {
+            color: $text-blue;
+
+            &:hover,
+            &:focus {
+                background-color: $info;
+                border-color: $info;
+                color: $text-white;
+            }
+        }
+    }
+
+    figure {
+        position: relative;
+        z-index: 2;
+    }
+
+    .titulo {
+        position: relative;
+        margin-left: 50px;
+
+        &::before {
+            position: absolute;
+            left: -50px;
+            content: '';
+            @include absolute-center-y;
+        }
+
+        &::after {
+            position: absolute;
+            background-color: $secondary;
+            width: 56%;
+            height: 2px;
+            right: 0;
+            content: '';
+            @include absolute-center-y;
+        }
+    }
+
+    #titulo-personas {
+        &::before {
+            @include background('../images/iconos/ico-personas.svg', center, contain);
+            width: 35px;
+            height: 43px;
+        }
+    }
+
+    #titulo-empresas {
+        &::before {
+            @include background('../images/iconos/ico-empresas.svg', center, contain);
+            width: 35px;
+            height: 43px;
+        }
+    }
+}
+
+#descanso-alt {
+    @include background('../images/bg-descanso-alt.png', center, cover);
+    color: $text-gold;
+    padding: 100px 0;
+
+    h1,
+    h2 {
+        position: relative;
+    }
+    
+    h1 {
+        @include font-size(5rem);
+        margin-bottom: -40px;
+        z-index: 1;
+    }
+
+    h2 {
+        @include font-size(6rem);
+        color:#3E406C;
+        font-family: 'brittany_signatureregular', sans-serif;
+        position: relative;
+        z-index: 2;
+    }
+
+    p {
+        letter-spacing: 0.3rem;
+    }
+
+    .btn-info {
+        box-shadow: 0px 0px 14px 0px #ccc;
+        font-family: 'circular_stdblack', sans-serif;
+        @include font-size(3rem);
+    }
+}
+
+#descanso-alt-2 {
+    @include background('../images/bg-descanso-alt-2.png', center, cover);
+    color: $text-blue;
+    padding: 100px 0;
+    
+    h1 {
+        font-family: 'brittany_signatureregular', sans-serif;
+        @include font-size(6rem);
+    }
+
+    .social {
+        a {
+            background-color: $primary;
+            color: $text-white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover,
+            &:focus {
+                background-color: $info;
+                color: $text-blue;
+                text-decoration: none;
+            }
+        }
+
+        h2 {
+            font-family: 'circular_stdbook', sans-serif;
+        }
     }
 }
