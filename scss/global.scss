@@ -632,6 +632,12 @@ footer {
 
     a {
         color: $text-white;
+
+        &:hover,
+        &:focus {
+            color: $text-white;
+            text-decoration: underline;
+        }
     }
 
     h1 {
