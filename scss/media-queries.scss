@@ -20,6 +20,12 @@
             }
         }
     }
+
+    footer {
+        .logo {
+            max-width: 400px;
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -108,6 +114,13 @@
             background-color: $secondary;
             content: '';
             z-index: 1;
+        }
+    }
+
+    .generic {
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 2%;
         }
     }
 }

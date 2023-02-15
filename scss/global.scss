@@ -97,7 +97,7 @@ h6 {
 }
 
 header#navbar {
-    background-color: $primary;
+    @include background('../images/bg-azul.png', center, cover);
     font-size: 1.6rem;
     width: 100%;
     height: auto;
@@ -148,7 +148,7 @@ header#navbar {
 }
 
 .navbar-scroll {
-    background-color: $primary;
+    @include background('../images/bg-azul.png', center, cover);
     padding: 10px 30px !important;
     @include transition(ease, 0.3s);
 
@@ -177,6 +177,13 @@ header#navbar {
     .container-fluid {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: $info;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
     }
 
     .carousel-item-2 {
@@ -281,7 +288,7 @@ header#navbar {
     }
 
     .contenedor-info {
-        background-color: $primary;
+        @include background('../images/bg-azul.png', center, cover);
         padding: 80px;
         display: flex;
         justify-content: center;
@@ -327,7 +334,7 @@ header#navbar {
 }
 
 #servicios {
-    background-color: $primary;
+    @include background('../images/bg-azul.png', center, cover);
     color: $text-white;
     padding: 100px 0;
     position: relative;
@@ -429,7 +436,7 @@ header#navbar {
 }
 
 .blog {
-    background-color: $primary;
+    @include background('../images/bg-azul.png', center, cover);
     color: $text-white;
     padding: 100px 0;
     position: relative;
@@ -472,7 +479,6 @@ header#navbar {
             &:focus {
                 background-color: $info;
                 border-color: $info;
-                color: $text-white;
             }
         }
     }
@@ -589,5 +595,109 @@ header#navbar {
         h2 {
             font-family: 'circular_stdbook', sans-serif;
         }
+    }
+}
+
+.generic {
+    @include background('../images/bg-generico.png', center, cover);
+    color: $text-blue;
+    padding: 100px 0;
+
+    h6 {
+        font-family: 'circular_stdbook', sans-serif;
+        letter-spacing: 0.3rem;
+    }
+
+    figure {
+        border-radius: 50px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C1B291' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+       
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C1B291' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+}
+
+footer {
+    @include background('../images/bg-azul.png', center, cover);
+    color: $text-white;
+    padding: 100px 0 40px;
+
+    a {
+        color: $text-white;
+    }
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    h6 {
+        font-family: 'circular_stdbook', sans-serif;
+        letter-spacing: 0.3rem;
+    }
+
+    .info {
+        li {
+            display: flex;
+            align-items: center;
+
+            address {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            background-color: $secondary;
+            color: $text-blue;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+
+            &:hover,
+            &:focus {
+                background-color: $info;
+                color: $text-blue;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .social {
+        a {
+            background-color: transparent;
+            border: 1px solid $secondary;
+            color: $text-white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+
+            &:hover,
+            &:focus {
+                background-color: $secondary;
+                color: $text-blue;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .logo {
+        max-width: 100%;
     }
 }

@@ -1,5 +1,5 @@
 .menu {
-    background-color: $primary !important;
+    @include background('../images/bg-azul.png', center, cover);
     width: 100%;
     height: 100vh;
     padding: 0 92px;
