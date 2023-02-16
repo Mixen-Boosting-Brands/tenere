@@ -131,6 +131,14 @@
             width: 2%;
         }
     }
+
+    #servicios {
+        padding: 280px 0 100px;
+        
+        .card {
+            min-height: 386px;
+        }
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -149,6 +157,12 @@
             &::after {
                 width: 16%;
             }
+        }
+    }
+
+    #servicios {
+        .card {
+            min-height: 346px;
         }
     }
 }

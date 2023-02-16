@@ -656,7 +656,9 @@ header#navbar {
 }
 
 #servicios {
-    padding: 180px 0 100px;
+    color: $text-blue;
+    padding: 200px 0 100px;
+    position: relative;
 
     h1 {
         margin-bottom: 0.5rem;
@@ -666,8 +668,8 @@ header#navbar {
         background-color: #E5DACC;
         border: none;
         border-radius: 0;
-        color: $text-blue;
         margin-bottom: 100px;
+        text-align: center;
 
         .icono {
             background-color: #E5DACC;
@@ -679,6 +681,22 @@ header#navbar {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        #icono-vida {
+            padding: 24px;
+        }
+
+        #icono-educacion {
+            padding: 18px;
+        }
+
+        #icono-retiro {
+            padding: 33px;
+        }
+
+        #icono-hombre-clave {
+            padding: 34px;
         }
 
         h1 {
@@ -694,7 +712,26 @@ header#navbar {
             letter-spacing: 0.3rem;
             text-transform: uppercase;
             display: block;
-            margin-bottom: -33px;
+            position: absolute;
+            bottom: -18px;
+            @include absolute-center-x;
+            //margin-bottom: -33px;
+        }
+    }
+
+    .banner {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h6 {
+            font-family: 'circular_stdbook', sans-serif;
+            letter-spacing: 0.3rem;
+        }
+    
+        figure {
+            position: relative;
+            z-index: 2;
         }
     }
 }
