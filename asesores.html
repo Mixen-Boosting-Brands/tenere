@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenere</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#131a60">
+    <meta name="msapplication-TileColor" content="#131a60">
+    <meta name="theme-color" content="#131a60">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div id="backdrop"></div>
+    <div class="menu">
+        <a id="cerrar-menu" href="javascript:void(0)">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="menu-contenido">
+            <a class="anchor" id="btn-logo" href="#">
+                <img class="logo img-fluid" src="./assets/images/logo.webp" alt="">
+            </a>
+            <nav>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="anchor" id="btn-nav-1" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-2" href="#">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-3" href="#">Servicios</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="anchor btn btn-primary" id="btn-contacto">Contáctanos</a>
+            <div id="social">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contacto-menu">
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="far fa-envelope"></i> <a href="mailto:cmail@domain.com">mail@domain.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i> <a href="tel:+526141234567">(614) 123 4567</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 my-auto">
+                    <a href="#">
+                        <img src="./assets/images/logo.webp" alt="" class="logo img-fluid" id="logo-navbar">
+                    </a>
+                </div>
+                <div class="col-lg-6 my-auto text-center d-none d-lg-block">
+                    <nav>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#">Inicio</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#">Nosotros</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#">Servicios</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 col-lg-3 my-auto text-end">
+                    <a id="mburger" class="d-lg-none" href="javascript:void(0)">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary d-none d-lg-block">
+                        Agenda una cita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="descanso-formulario" class="descanso-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-auto text-center">
+                    <h1 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">
+                        ¡Gracias por confiar en nosotros!
+                    </h1>
+                    <p class="text-uppercase" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        Te invitamos a contestar el siguiente formulario.
+                    </p>
+                    <a href="#" class="btn btn-info btn-lg text-uppercase display-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                        Formulario
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="asesores" class="generic">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                    <h6 class="text-uppercase">Testimonio</h6>
+                    <h1 class="text-uppercase">Nuestros asesores</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+                    <div id="carrusel-asesores" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-1.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Iván C. Hernández</h2>
+                                        <p>
+                                            No pude encontrar una mejor desarrolladora que Karely para incursionar en este complejo, pero fascinante mundo de los seguros. Su acompañamiento me ha llevado generosa y pacientemente por los renglones de la teoría lo mismo que por los caminos de la práctica, permitiéndome comprender y asimilar el quehacer de un asesor de seguros con dinamismo,  entusiasmo y un gran sentido ético.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-2.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Gila Granillo</h2>
+                                        <p>
+                                            Karelly mi desarrolladora, el acompañamiento, la contensión, la paciencia y la resiliencia que ha manejado conmigo, no puedo estar más agradecida por guiar cada paso, cada decisión importante, para ser una asesora exitosa y reconocida, es una desarrolladora realmente comprometida y honesta, con su equipo.
+                                        </p>
+                                        <p class="text-uppercase">
+                                            ¡Gracias por impulsarme!
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-3.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Pedro Díaz</h2>
+                                        <p>
+                                            Gracias Karelly, has hecho renacer en mi vida parte d una visión y capacidades, como no motivarse ante una avalancha que te empuja diario y no se detiene (eso eres)... Eres como mi Taz...arrastras con tu remolino de actitud positiva que nos mueve tanto en trabajo como Vida y no podemos detenernos. Simplemente Gracias!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-1.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Iván C. Hernández</h2>
+                                        <p>
+                                            No pude encontrar una mejor desarrolladora que Karely para incursionar en este complejo, pero fascinante mundo de los seguros. Su acompañamiento me ha llevado generosa y pacientemente por los renglones de la teoría lo mismo que por los caminos de la práctica, permitiéndome comprender y asimilar el quehacer de un asesor de seguros con dinamismo,  entusiasmo y un gran sentido ético.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-2.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Gila Granillo</h2>
+                                        <p>
+                                            Karelly mi desarrolladora, el acompañamiento, la contensión, la paciencia y la resiliencia que ha manejado conmigo, no puedo estar más agradecida por guiar cada paso, cada decisión importante, para ser una asesora exitosa y reconocida, es una desarrolladora realmente comprometida y honesta, con su equipo.
+                                        </p>
+                                        <p class="text-uppercase">
+                                            ¡Gracias por impulsarme!
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-3.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Pedro Díaz</h2>
+                                        <p>
+                                            Gracias Karelly, has hecho renacer en mi vida parte d una visión y capacidades, como no motivarse ante una avalancha que te empuja diario y no se detiene (eso eres)... Eres como mi Taz...arrastras con tu remolino de actitud positiva que nos mueve tanto en trabajo como Vida y no podemos detenernos. Simplemente Gracias!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-1.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Iván C. Hernández</h2>
+                                        <p>
+                                            No pude encontrar una mejor desarrolladora que Karely para incursionar en este complejo, pero fascinante mundo de los seguros. Su acompañamiento me ha llevado generosa y pacientemente por los renglones de la teoría lo mismo que por los caminos de la práctica, permitiéndome comprender y asimilar el quehacer de un asesor de seguros con dinamismo,  entusiasmo y un gran sentido ético.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-2.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Gila Granillo</h2>
+                                        <p>
+                                            Karelly mi desarrolladora, el acompañamiento, la contensión, la paciencia y la resiliencia que ha manejado conmigo, no puedo estar más agradecida por guiar cada paso, cada decisión importante, para ser una asesora exitosa y reconocida, es una desarrolladora realmente comprometida y honesta, con su equipo.
+                                        </p>
+                                        <p class="text-uppercase">
+                                            ¡Gracias por impulsarme!
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                                        <figure class="mb-3">
+                                            <img src="./assets/images/asesores/thumb-asesor-3.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <h2>Pedro Díaz</h2>
+                                        <p>
+                                            Gracias Karelly, has hecho renacer en mi vida parte d una visión y capacidades, como no motivarse ante una avalancha que te empuja diario y no se detiene (eso eres)... Eres como mi Taz...arrastras con tu remolino de actitud positiva que nos mueve tanto en trabajo como Vida y no podemos detenernos. Simplemente Gracias!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-asesores" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrusel-asesores" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-4 order-lg-3 mb-4 mb-lg-0">
+                    <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="col-lg-6 col-xl-4 offset-xl-2">
+                            <h1>Menú</h1>
+                        </div>
+                        <div class="col-lg-6">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">
+                                            Inicio
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Nosotros
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Servicios
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Podcast
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="anchor" href="#contacto">
+                                            Contacto
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Política
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-2 mb-4 mb-lg-0">
+                    <!-- Aquí se inyecta feedback a usuario vía Ajax -->
+                    <div id="form-messages"></div>
+                    <!-- /Aquí se inyecta feedback a usuario vía Ajax -->
+                    <form data-aos="fade-up" data-aos-duration="1000" action="mailer.php" method="POST" class="row g-3 needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control shadow-none" id="nombre" name="nombre" placeholder="Nombre*"
+                                    pattern=".{5,50}" required>
+                                <label for="nombre" class="form-label">Nombre*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu nombre completo.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Email*"
+                                    required>
+                                <label for="correo" class="form-label">Email*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="col-md-12 form-floating">
+                                <input type="tel" class="form-control shadow-none" id="telefono" name="telefono" placeholder="Teléfono*"
+                                    required>
+                                <label for="telefono" class="form-label">Teléfono*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce un número de teléfono válido (p. ej: 6141234567).
+                                </div>
+                            </div>
+                            <div class="col-md-12 form-floating mb-4">
+                                <textarea class="form-control shadow-none" id="mensaje" name="mensaje" placeholder="Mensaje*" style="height: 100px;" required></textarea>
+                                <label for="mensaje">Mensaje*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu mensaje.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <button type="submit" class="btn btn-secondary btn-block rounded-pill"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                                <div id="hold-on-a-sec">
+                                    <i id="contact-spinner" class="fas fa-spinner fa-spin"></i> Espera un momento por favor...
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 order-lg-1">
+                    <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="col">
+                            <h1>Chihuahua</h1>
+                            <ul class="list-unstyled info">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-location-pin"></i>
+                                    </a>
+                                    <address>
+                                        Av. de la Empresa<br>
+                                        Vistas del Sol, Chihuahua, Chih.
+                                    </address>
+                                </li>
+                                <li>
+                                    <a href="tel:+526143970559">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <span>(614) 397 0559</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="col">
+                            <h1>Síguenos</h1>
+                            <h6 class="text-uppercase">teneremx</h6>
+                            <p></p>
+                            <ul class="list-inline social">
+                                <li class="list-inline-item">
+                                    <a href="https://facebook.com/teneremx" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://instagram.com/teneremx" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://tiktok.com/teneremx" target="_blank">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://linkedin.com/teneremx" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
+                    <a href="#">
+                        <img src="./assets/images/logo.webp" alt="" class="logo img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/52614?text=Hola%20FOO%20BAR,%20necesito%20información." class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <script src="./assets/js/app.bundle.js"></script>
+</body>
+</html>

@@ -355,7 +355,7 @@ header#navbar {
     }
 }
 
-#servicios {
+#nuestros-servicios {
     @include background('../images/bg-azul.png', center, cover);
     color: $text-white;
     padding: 100px 0;
@@ -549,7 +549,7 @@ header#navbar {
     }
 }
 
-#descanso-alt {
+.descanso-alt {
     @include background('../images/bg-descanso-alt.png', center, cover);
     color: $text-gold;
     padding: 100px 0;
@@ -584,7 +584,7 @@ header#navbar {
     }
 }
 
-#descanso-alt-2 {
+.descanso-alt-2 {
     @include background('../images/bg-descanso-alt-2.png', center, cover);
     color: $text-blue;
     padding: 100px 0;
@@ -617,6 +617,14 @@ header#navbar {
         h2 {
             font-family: 'circular_stdbook', sans-serif;
         }
+    }
+}
+
+#descanso-formulario {
+    padding: 180px 0 20px;
+
+    h1 {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -659,6 +667,12 @@ footer {
         &:focus {
             color: $text-white;
             text-decoration: underline;
+        }
+    }
+
+    nav {
+        ul {
+            line-height: 2rem;
         }
     }
 
