@@ -278,8 +278,30 @@ header#navbar {
         align-items: end;
         text-align: center;
 
-        h1 {
+        figure,
+        h1,
+        .btn {
+            position: relative;
+            z-index: 2;
+            display: block;
+        }
+
+        figure {
+            .logo {
+                max-width: 30%;
+            }
+        }
+
+        .btn {
+            background-color: transparent;
+            border: 1px solid $secondary;
             margin-bottom: 150px;
+            display: inline-block;
+
+            &:hover,
+            &:focus {
+                background-color: $secondary;
+            }
         }
 
         .overlay {
