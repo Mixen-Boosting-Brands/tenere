@@ -676,9 +676,9 @@
     <footer id="contacto">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-4 order-lg-3">
+                <div class="col-lg-4 order-lg-3 mb-4 mb-lg-0">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-xl-4 offset-xl-2">
                             <h1>Menú</h1>
                         </div>
                         <div class="col-lg-6">
@@ -723,6 +723,64 @@
                             </nav>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-4 order-lg-2 mb-4 mb-lg-0">
+                    <!-- Aquí se inyecta feedback a usuario vía Ajax -->
+                    <div id="form-messages"></div>
+                    <!-- /Aquí se inyecta feedback a usuario vía Ajax -->
+                    <form data-aos="fade-up" data-aos-duration="1000" action="mailer.php" method="POST" class="row g-3 needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control shadow-none" id="nombre" name="nombre" placeholder="Nombre*"
+                                    pattern=".{5,50}" required>
+                                <label for="nombre" class="form-label">Nombre*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu nombre completo.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Email*"
+                                    required>
+                                <label for="correo" class="form-label">Email*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="col-md-12 form-floating">
+                                <input type="tel" class="form-control shadow-none" id="telefono" name="telefono" placeholder="Teléfono*"
+                                    required>
+                                <label for="telefono" class="form-label">Teléfono*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce un número de teléfono válido (p. ej: 6141234567).
+                                </div>
+                            </div>
+                            <div class="col-md-12 form-floating mb-4">
+                                <textarea class="form-control shadow-none" id="mensaje" name="mensaje" placeholder="Mensaje*" style="height: 100px;" required></textarea>
+                                <label for="mensaje">Mensaje*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu mensaje.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <button type="submit" class="btn btn-secondary btn-block rounded-pill"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                                <div id="hold-on-a-sec">
+                                    <i id="contact-spinner" class="fas fa-spinner fa-spin"></i> Espera un momento por favor...
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-4 order-lg-1">
                     <div class="row mb-4">

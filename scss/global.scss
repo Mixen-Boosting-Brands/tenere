@@ -706,4 +706,28 @@ footer {
     .logo {
         max-width: 100%;
     }
+
+    .form-control {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $secondary;
+        border-radius: 0;
+        color: $text-white;
+
+        &:focus {
+            background-color: transparent;
+        }
+    }
+
+    .btn-secondary {
+        color: $text-blue;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+            background-color: $info;
+            border-color: $info;
+        }
+    }
 }
