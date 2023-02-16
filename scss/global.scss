@@ -655,6 +655,50 @@ header#navbar {
     }
 }
 
+#servicios {
+    padding: 180px 0 100px;
+
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .card {
+        background-color: #E5DACC;
+        border: none;
+        border-radius: 0;
+        color: $text-blue;
+        margin-bottom: 100px;
+
+        .icono {
+            background-color: #E5DACC;
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+            margin: -50px auto 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            @include font-size(1.6rem);
+        }
+
+        p {
+            letter-spacing: normal;
+            text-align: justify;
+        }
+
+        .btn-primary {
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: -33px;
+        }
+    }
+}
+
 footer {
     @include background('../images/bg-azul.png', center, cover);
     color: $text-white;
@@ -755,15 +799,14 @@ footer {
         }
     }
 
-    .btn-secondary {
-        color: $text-blue;
-        letter-spacing: 0.3rem;
-        text-transform: uppercase;
+    .btn-primary {
+        border: 1px solid $secondary;
 
         &:hover,
         &:focus {
-            background-color: $info;
-            border-color: $info;
+            background-color: $secondary;
+            border-color: $secondary;
+            color: $text-blue;
         }
     }
 }
