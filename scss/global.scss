@@ -829,7 +829,7 @@ footer {
         border: none;
         border-bottom: 1px solid $secondary;
         border-radius: 0;
-        color: $text-white;
+        color: $text-white !important;
 
         &:focus {
             background-color: transparent;
