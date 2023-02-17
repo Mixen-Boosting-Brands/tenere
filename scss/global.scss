@@ -137,7 +137,8 @@ header#navbar {
         }
     }
 
-    .btn {
+    .btn-primary {
+        background-color: transparent;
         border: 1px solid $secondary;
 
         &:hover,
@@ -457,7 +458,8 @@ header#navbar {
     }
 }
 
-.blog {
+.blog,
+.beneficios-asesores {
     @include background('../images/bg-azul.png', center, cover);
     color: $text-white;
     padding: 100px 0;
@@ -736,6 +738,38 @@ header#navbar {
     }
 }
 
+#beneficios-asesores {
+    padding: 100px 0 0;
+
+    h2 {
+        color: $text-white;
+        background-color: $info;
+        border-radius: 2rem;
+        // box-shadow: 0px 0px 14px 0px #ccc;
+        font-family: 'circular_stdblack', sans-serif;
+        display: inline-block;
+        padding: 12px 20px;
+        @include font-size(3rem);
+    }
+
+    .viajes-y-convenciones {
+        img {
+            max-width: 230px;
+        }
+    }
+
+    .btn-primary {
+        background-color: transparent;
+        border: 1px solid #fff;
+
+        &:hover,
+        &:focus {
+            background-color: $secondary;
+            color: $text-blue !important;
+        }
+    }
+}
+
 footer {
     @include background('../images/bg-azul.png', center, cover);
     color: $text-white;
@@ -837,6 +871,7 @@ footer {
     }
 
     .btn-primary {
+        background-color: transparent;
         border: 1px solid $secondary;
 
         &:hover,
